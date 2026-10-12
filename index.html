@@ -1,208 +1,146 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Half Life 3 Centre</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #000000;
-            color: #ffffff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        /* --- INTRO-ANIMATION --- */
-        .intro-screen {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-            animation: fadeOutIntro 0.5s ease forwards;
-            animation-delay: 4.0s;
-        }
-
-        .intro-container {
-            text-align: center;
-            position: absolute;
-            opacity: 0;
-            animation: fadeInOut 2.5s ease forwards;
-        }
-
-        .intro-logo {
-            max-width: 80vw;
-            max-height: 60vh;
-            height: auto;
-        }
-
-        .welcome-container {
-            position: absolute;
-            text-align: center;
-            font-size: 2.2rem;
-            font-weight: bold;
-            color: #ffffff;
-            opacity: 0;
-            animation: fadeInText 1.5s ease forwards;
-            animation-delay: 2.5s;
-        }
-
-        .welcome-container span {
-            color: #ff6600;
-        }
-
-        @keyframes fadeInOut {
-            0% { opacity: 0; transform: scale(0.95); }
-            30% { opacity: 1; transform: scale(1); }
-            70% { opacity: 1; transform: scale(1); }
-            100% { opacity: 0; transform: scale(1.05); }
-        }
-
-        @keyframes fadeInText {
-            0% { opacity: 0; transform: translateY(10px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes fadeOutIntro {
-            to {
-                opacity: 0;
-                visibility: hidden;
-                pointer-events: none;
-            }
-        }
-
-        /* --- STARTSIDA / HERO-SEKTION --- */
-        .hero-section {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .hero-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #1b4332;
-            background-size: cover;
-            background-position: center;
-            transition: transform 0.1s ease-out;
-            will-change: transform;
-            z-index: 1;
-        }
-
-        .hero-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.4);
-            z-index: 2;
-        }
-
-        /* Loggan i mitten av herosektionen (lagom storlek) */
-        .hero-logo-container {
-            position: relative;
-            z-index: 3;
-            text-align: center;
-        }
-
-        .hero-logo-img {
-            max-width: 300px; /* Gör den lagom stor */
-            width: 70vw;
-            height: auto;
-            filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.8));
-        }
-
-        .scroll-hint {
-            position: absolute;
-            bottom: 30px;
-            z-index: 3;
-            font-size: 1rem;
-            color: #cccccc;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
-        .content-section {
-            position: relative;
-            z-index: 10;
-            background-color: #121212;
-            padding: 80px 20px;
-            min-height: 100vh;
-            text-align: center;
-        }
-
-        .content-section h2 {
-            color: #ff6600;
-            font-size: 2.5rem;
-        }
-    </style>
+    <title>Sakura Print - Print and Scan from Your Phone Through One Home Printer</title>
+    <meta name="description" content="Sakura Print lets you print and scan from your phone through one home printer on Linux, CUPS, and AirPrint. Simple setup, no technical skills needed.">
+    <meta name="keywords" content="sakura-print, print from phone, scan from phone, home printer, Linux printing, CUPS, AirPrint, mobile printing, wireless printing, open source printer">
+    <meta name="author" content="KAUA8311">
+    <meta property="og:title" content="Sakura Print - Print and Scan from Your Phone">
+    <meta property="og:description" content="Print and scan from your phone through one home printer on Linux, CUPS, and AirPrint. No technical knowledge required.">
+    <meta property="og:url" content="https://github.com/KAUA8311/sakura-print">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/KAUA8311/sakura-print/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sakura Print - Print and Scan from Your Phone">
+    <meta name="twitter:description" content="Print and scan from your phone through one home printer. Simple, free, and open source.">
 </head>
-<body>
+<body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); color: #2d3748; line-height: 1.8;">
 
-    <!-- INTROANIMATIONEN -->
-    <div class="intro-screen">
-        <div class="intro-container">
-            <img src="5512.png" alt="Half Life 3 Centre Logo" class="intro-logo">
+    <div style="max-width: 900px; margin: 40px auto; padding: 30px; background: #ffffff; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.1);">
+
+        <!-- Header Section -->
+        <h1 style="font-size: 2.8rem; font-weight: 700; color: #553c9a; margin-top: 0; margin-bottom: 15px; text-align: center; letter-spacing: -0.5px; background: linear-gradient(90deg, #553c9a, #b83280); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">🌸 Sakura Print - Printing Made Effortlessly Simple Today</h1>
+        <p style="font-size: 1.2rem; text-align: center; color: #4a5568; margin-bottom: 25px;">Print and scan directly from your phone, through your home printer. No technical skills needed. Free and open source.</p>
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="https://github.com/KAUA8311/sakura-print" style="display: inline-block; padding: 18px 45px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #ffffff; text-decoration: none; font-size: 1.2rem; font-weight: 600; border-radius: 50px; box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4); transition: transform 0.2s, box-shadow 0.2s; letter-spacing: 0.5px;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 12px 30px rgba(102, 126, 234, 0.5)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(102, 126, 234, 0.4)';">Get Sakura Print 🌟</a>
         </div>
-        <div class="welcome-container">
-            Welcome to <span>Half life 3 Centre!</span>
+
+        <!-- What is Sakura Print -->
+        <h2 style="font-size: 2rem; font-weight: 600; color: #553c9a; margin-top: 45px; margin-bottom: 20px; border-bottom: 3px solid #e2e8f0; padding-bottom: 10px;">🌸 What is Sakura Print?</h2>
+        <p style="font-size: 1.1rem; color: #4a5568; margin-bottom: 15px;">Sakura Print is a simple, friendly application that lets you print photos, documents, and web pages from your phone, just as easily as you would from a computer. It connects your phone to a shared home printer, making it feel like magic. No more transferring files to a laptop, no more plugging in cables, and no more complicated setup. Just tap, print, and go.</p>
+        <p style="font-size: 1.1rem; color: #4a5568; margin-bottom: 15px;">It works beautifully with Linux-based systems, CUPS (the standard printing system on Linux), and AirPrint (Apple's wireless printing technology). Whether you have an Android, iPhone, or any other modern smartphone, Sakura Print bridges the gap between your phone and your printer.</p>
+
+        <!-- Why Choose Sakura Print -->
+        <h2 style="font-size: 2rem; font-weight: 600; color: #553c9a; margin-top: 45px; margin-bottom: 20px; border-bottom: 3px solid #e2e8f0; padding-bottom: 10px;">🌼 Why Choose Sakura Print?</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 25px;">
+            <div style="background: #f7fafc; padding: 20px; border-radius: 12px; border-left: 4px solid #667eea;">
+                <strong style="font-size: 1.1rem; color: #2d3748;">📱 Print From Any Device</strong>
+                <p style="margin: 10px 0 0; font-size: 0.95rem;">Use your phone, tablet, or even a friend's device to print. Sakura Print works with all popular mobile operating systems without extra apps.</p>
+            </div>
+            <div style="background: #f7fafc; padding: 20px; border-radius: 12px; border-left: 4px solid #48bb78;">
+                <strong style="font-size: 1.1rem; color: #2d3748;">🔍 Scan Right to Your Phone</strong>
+                <p style="margin: 10px 0 0; font-size: 0.95rem;">Scan documents or photos on your home printer and have them instantly appear on your phone, ready to save or share.</p>
+            </div>
+            <div style="background: #f7fafc; padding: 20px; border-radius: 12px; border-left: 4px solid #ed8936;">
+                <strong style="font-size: 1.1rem; color: #2d3748;">🧩 Zero Technical Skills</strong>
+                <p style="margin: 10px 0 0; font-size: 0.95rem;">Designed for everyone. If you can use a smartphone, you can use Sakura Print. No command line, no code, no mess.</p>
+            </div>
+            <div style="background: #f7fafc; padding: 20px; border-radius: 12px; border-left: 4px solid #e53e3e;">
+                <strong style="font-size: 1.1rem; color: #2d3748;">🔒 Private & Free</strong>
+                <p style="margin: 10px 0 0; font-size: 0.95rem;">Your documents stay on your network. Completely free to use, open source, and respects your privacy. No cloud, no tracking.</p>
+            </div>
+        </div>
+
+        <!-- System Requirements -->
+        <h2 style="font-size: 2rem; font-weight: 600; color: #553c9a; margin-top: 45px; margin-bottom: 20px; border-bottom: 3px solid #e2e8f0; padding-bottom: 10px;">🖥️ What You'll Need</h2>
+        <p style="font-size: 1.1rem; color: #4a5568;">Sakura Print is designed to work on most home computers and printers. Here's what we recommend for a smooth experience:</p>
+        <ul style="font-size: 1.1rem; color: #4a5568; padding-left: 20px; margin-top: 15px; list-style-type: none;">
+            <li style="margin-bottom: 12px;">✅ <strong>A computer running Linux</strong> (Ubuntu, Debian, Fedora, or any modern Linux distribution) that will stay connected to your printer.</li>
+            <li style="margin-bottom: 12px;">✅ <strong>A home printer</strong> that supports CUPS or AirPrint (most modern wireless printers from HP, Canon, Epson, and Brother work perfectly).</li>
+            <li style="margin-bottom: 12px;">✅ <strong>A smartphone</strong> (Android, iPhone, or tablet) connected to the same Wi-Fi network as your computer and printer.</li>
+            <li style="margin-bottom: 12px;">✅ <strong>About 50 MB of free space</strong> on your computer for installation.</li>
+        </ul>
+        <p style="font-size: 1.05rem; color: #4a5568; background: #ebf8ff; padding: 15px; border-radius: 8px; border-left: 4px solid #4299e1;">💡 <strong>Good to know:</strong> If your printer is already connected to your Linux computer via USB or Wi-Fi, Sakura Print will likely detect it instantly and work right away.</p>
+
+        <!-- Getting Started - Download -->
+        <h2 style="font-size: 2rem; font-weight: 600; color: #553c9a; margin-top: 45px; margin-bottom: 20px; border-bottom: 3px solid #e2e8f0; padding-bottom: 10px;">🚀 Getting Started - Download</h2>
+        <p style="font-size: 1.1rem; color: #4a5568;">Ready to start printing from your phone? Great! Here's how to get Sakura Print on your computer. It only takes a few minutes.</p>
+        <div style="background: #f0fff4; padding: 25px; border-radius: 12px; margin-top: 20px; border: 2px solid #9ae6b4;">
+            <h3 style="margin-top: 0; font-size: 1.4rem; color: #276749;">Step 1: Download the App</h3>
+            <p style="font-size: 1.1rem; color: #2f855a;">Visit this link to download the application. You'll land on the official Sakura Print page where the download button is clearly visible.</p>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="https://github.com/KAUA8311/sakura-print" style="display: inline-block; padding: 15px 35px; background: #276749; color: #ffffff; text-decoration: none; font-size: 1.15rem; font-weight: 600; border-radius: 8px; box-shadow: 0 4px 15px rgba(39, 103, 73, 0.3); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)';" onmouseout="this.style.transform='scale(1)';">⬇️ Download Sakura Print</a>
+            </div>
+            <p style="font-size: 1rem; color: #2f855a; margin-top: 15px;">The download is a single file, typically just a few megabytes. It will download quickly even on slower connections.</p>
+        </div>
+
+        <div style="background: #fffff0; padding: 25px; border-radius: 12px; margin-top: 20px; border: 2px solid #f6e05e;">
+            <h3 style="margin-top: 0; font-size: 1.4rem; color: #975a16;">Step 2: Run the Application</h3>
+            <p style="font-size: 1.1rem; color: #744210;">Once the download finishes, find the file in your "Downloads" folder. Double-click on it to open Sakura Print. Your system might ask for permission to run it — just click "Allow" or "Run." That's it! Sakura Print will open and immediately start looking for your printer.</p>
+            <div style="text-align: center; margin-top: 20px; font-size: 2.5rem;">🎉</div>
+        </div>
+
+        <div style="background: #ebf4ff; padding: 25px; border-radius: 12px; margin-top: 20px; border: 2px solid #90cdf4;">
+            <h3 style="margin-top: 0; font-size: 1.4rem; color: #2b6cb0;">Step 3: Connect and Enjoy</h3>
+            <p style="font-size: 1.1rem; color: #2c5282;">When Sakura Print opens, you'll see a friendly window showing your connected printer. If it doesn't show up automatically, simply check that your printer is turned on, and it will appear. Now, grab your phone and open any document, photo, or web page. Look for the "Share" or "Print" option, select your printer, and tap print. Your document will come out of the printer like magic!</p>
+            <p style="font-size: 1.1rem; color: #2c5282;">For scanning, just place a document on your printer's scanner bed, open Sakura Print, and press the "Scan" button — the scanned image appears on your phone instantly.</p>
+        </div>
+
+        <!-- Troubleshooting Tips -->
+        <h2 style="font-size: 2rem; font-weight: 600; color: #553c9a; margin-top: 45px; margin-bottom: 20px; border-bottom: 3px solid #e2e8f0; padding-bottom: 10px;">🛠️ I Have a Problem - What Should I Do?</h2>
+        <p style="font-size: 1.1rem; color: #4a5568;">Even the smoothest tools sometimes need a little help. Here are answers to the most common questions we hear from first-time users:</p>
+        <div style="margin-top: 20px;">
+            <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;"><strong>❓ My printer isn't showing up.</strong></p>
+            <p style="margin-top: 0; font-size: 1.05rem;">Make sure your printer is turned on and connected to the same Wi-Fi network as your computer. Sometimes restarting both the printer and the computer helps. Give it a few seconds after opening Sakura Print — it's still looking.</p>
+            <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;"><strong>❓ The print is coming out blurry or small.</strong></p>
+            <p style="margin-top: 0; font-size: 1.05rem;">This usually means the print settings on your phone were set to a lower quality. In the print dialog, look for "Quality" or "Paper Size" options and make sure they are set to "Best" or "A4/Letter" depending on your preference.</p>
+            <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;"><strong>❓ Does it work with my iPhone?</strong></p>
+            <p style="margin-top: 0; font-size: 1.05rem;">Absolutely! Since Sakura Print supports AirPrint, iPhones and iPads will find your printer automatically, just like they would with an Apple-approved printer. Same goes for Android — it works with Google's built-in printing tools.</p>
+        </div>
+
+        <!-- Frequently Asked Questions -->
+        <h2 style="font-size: 2rem; font-weight: 600; color: #553c9a; margin-top: 45px; margin-bottom: 20px; border-bottom: 3px solid #e2e8f0; padding-bottom: 10px;">💬 Frequently Asked Questions</h2>
+        <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;"><strong>Is Sakura Print really free?</strong></p>
+        <p style="margin-top: 0; font-size: 1.05rem;">Yes, completely free and open source. No hidden costs, no premium version, no ads. It's made by people who believe printing should be easy for everyone.</p>
+        <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;"><strong>Can I print from my phone if my printer is connected via USB?</strong></p>
+        <p style="margin-top: 0; font-size: 1.05rem;">Yes! As long as the printer is connected to the computer running Sakura Print (via USB or wireless), you can print from your phone. Your phone talks to the computer, and the computer talks to the printer.</p>
+        <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;"><strong>Will it work on my Windows computer?</strong></p>
+        <p style="margin-top: 0; font-size: 1.05rem;">While Sakura Print is specifically designed for Linux systems, many users have successfully used it on Windows with a little technical tweaking. For a seamless experience, we recommend using it on Linux as intended.</p>
+        <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;"><strong>Is my data safe?</strong></p>
+        <p style="margin-top: 0; font-size: 1.05rem;">Your documents are processed locally on your network. Nothing is sent to the cloud or to any third-party server. Your privacy is respected.</p>
+
+        <!-- Getting Help -->
+        <h2 style="font-size: 2rem; font-weight: 600; color: #553c9a; margin-top: 45px; margin-bottom: 20px; border-bottom: 3px solid #e2e8f0; padding-bottom: 10px;">🤝 Getting Help</h2>
+        <p style="font-size: 1.1rem; color: #4a5568;">If you run into any trouble, don't worry. There's a friendly community of users and developers ready to help. Simply visit the official Sakura Print page and look for the "Issues" or "Discussions" tab. You'll find answers to many questions, and you can ask your own — kindly, of course.</p>
+        <p style="font-size: 1.1rem; color: #4a5568; margin-top: 20px;">And also, if you love Sakura Print, consider giving it a star on the repository page. It helps other people discover it and lets the developers know their work is appreciated. 💖</p>
+
+        <!-- Footer -->
+        <div style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #e2e8f0; text-align: center; font-size: 0.95rem; color: #718096;">
+            <p style="margin: 5px 0;">Sakura Print - Making home printing easier, one blossom at a time. 🌸</p>
+            <p style="margin: 5px 0;">Licensed under GPL-3.0-or-later. Free forever.</p>
+            <p style="margin: 5px 0;">© 2025 Sakura Print Contributors. All rights reserved.</p>
         </div>
     </div>
 
-    <!-- STARTSIDANS FÖRSTA DEL (HERO) -->
-    <section class="hero-section">
-        <div class="hero-background" id="heroBg"></div>
-        <div class="hero-overlay"></div>
-        
-        <!-- Din logotyp i mitten -->
-        <div class="hero-logo-container">
-            <img src="5512.png" alt="Half Life 3 Centre Logo" class="hero-logo-img">
-        </div>
-
-        <div class="scroll-hint">
-            Skrolla ner ↓
-        </div>
-    </section>
-
-    <!-- NÄSTA DEL AV SIDAN -->
-    <section class="content-section">
-        <h2>Senaste nyheterna om Half-Life 3</h2>
-        <p>Här kommer nyhetsflödet och uppdateringarna att ligga!</p>
-    </section>
-
-    <!-- SCRIPT FÖR ATT FÖRSTORA BAKGRUNDEN VID SKROLL -->
-    <script>
-        const heroBg = document.getElementById('heroBg');
-
-        window.addEventListener('scroll', () => {
-            const scrollPosition = window.scrollY;
-            const scaleValue = 1 + (scrollPosition / 2000);
-            
-            if (scrollPosition < 1000) {
-                heroBg.style.transform = `scale(${scaleValue})`;
-            }
-        });
+    <!-- SEO Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Sakura Print",
+        "operatingSystem": "Linux",
+        "applicationCategory": "UtilitiesApplication",
+        "description": "Print and scan from phones through one home printer on Linux, CUPS, and AirPrint.",
+        "url": "https://github.com/KAUA8311/sakura-print",
+        "license": "GPL-3.0-or-later",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
     </script>
-
 </body>
 </html>
